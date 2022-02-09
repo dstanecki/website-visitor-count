@@ -25,7 +25,6 @@ def lambda_handler(event, context):
     # Format DynamoDB response into a variable
     responseBody = json.dumps({"count": response['Attributes']['visitor_count']['N']})
 
-
     # Create api response object
     apiResponse = {
         "isBase64Encoded": False,
@@ -37,7 +36,6 @@ def lambda_handler(event, context):
         },
         "body": responseBody
     }
-
 
     # Return api response object
     return apiResponse
