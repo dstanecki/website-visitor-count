@@ -21,10 +21,7 @@ def lambda_handler(event, context):
         },
         ReturnValues="UPDATED_NEW"
     )
-    # Prints the current visitor count number:
     
-    # print(response['Attributes']['visitor_count']['N'])
-
     # Format DynamoDB response into a variable
     responseBody = json.dumps({"count": response['Attributes']['visitor_count']['N']})
 
