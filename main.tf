@@ -1,7 +1,7 @@
 provider "aws" {
   region = var.aws_region
-  access_key = "AKIASNFFYFSOB5MJHW7P"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 # DynamoDB Table with hash key 'id'
